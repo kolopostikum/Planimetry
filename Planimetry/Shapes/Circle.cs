@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Planimetry.Shapes
 {
+    /// <summary>
+    /// Represents a circle.
+    /// </summary>
     public class Circle : IShape
     {
         public Circle(double radius)
@@ -17,6 +20,10 @@ namespace Planimetry.Shapes
 
         public double Radius { get; }
 
+        /// <summary>
+        /// Calculates the area of the circle.
+        /// </summary>
+        /// <returns>The area of the circle.</returns>
         public double CalculateArea() => Math.PI * Radius * Radius;
     }
 }
